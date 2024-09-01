@@ -1,0 +1,20 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "make",
+            "args": [],
+            "options": {
+                "cwd": "/usr/local/nginx/ngx_code_test/ngx_str" // 设置正确的工作目录
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Build task using make."
+        }
+    ]
+}

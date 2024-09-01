@@ -1,0 +1,14 @@
+./configure --prefix=/usr/local/nginx --with-http_realip_module --with-http_addition_module --with-http_ssl_module --with-http_gzip_static_module --with-http_secure_link_module --with-http_stub_status_module --with-stream --with-pcre=/home/jerry/snap/nginx/pcre-8.45 --with-zlib=/home/jerry/snap/nginx/zlib-1.2.13 --with-openssl=/home/jerry/snap/nginx/openssl-1.1.1s
+
+##编译
+root@jerry-virtual-machine:/usr/local/nginx/ngx_code_test/ngx_str# gcc ngx_str_code.c -o ngx_str_code -I /home/jerry/snap/nginx/nginx-1.22.1/src/core -I /home/jerry/snap/nginx/nginx-1.22.1/objs -I /home/jerry/snap/nginx/nginx-1.22.1/src/os/unix/ -I /home/jerry/snap/nginx/pcre-8.45
+
+
+
+##过滤器
+./configure --prefix=/usr/local/nginx --with-http_realip_module --with-http_addition_module --with-http_ssl_module --with-http_gzip_static_module --with-http_secure_link_module --with-http_stub_status_module --with-stream --with-pcre=/home/jerry/snap/nginx/pcre-8.45 --with-zlib=/home/jerry/snap/nginx/zlib-1.2.13 --with-openssl=/home/jerry/snap/nginx/openssl-1.1.1s --add-module=/usr/local/nginx/ngx_code_test/ngx_http_prefix_filter_module
+
+ngx_http_zvoice_filter_module
+
+##handle
+./configure --prefix=/usr/local/nginx --with-http_realip_module --with-http_addition_module --with-http_ssl_module --with-http_gzip_static_module --with-http_secure_link_module --with-http_stub_status_module --with-stream --with-pcre=/home/jerry/snap/nginx/pcre-8.45 --with-zlib=/home/jerry/snap/nginx/zlib-1.2.13 --with-openssl=/home/jerry/snap/nginx/openssl-1.1.1s --add-module=/usr/local/nginx/ngx_code_test/ngx_http_handler_count_module
